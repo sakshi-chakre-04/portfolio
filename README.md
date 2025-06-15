@@ -78,7 +78,7 @@ The following environment variables are required:
 ## 🚀 Deployment
 
 This application is currently deployed on:
-- Render: https://node-backend-3-f264.onrender.com/api/user/userform
+- Render: 
 
 ## 📝 License
 
