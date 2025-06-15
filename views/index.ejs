@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Sakshi Chakre</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.instagram.com/sakshi_chakre_04_/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/sakshi-chakre" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#skills"><i class="bi bi-bar-chart navicon"></i> Skills</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+      <!-- <div class="image-container">
+        
+        <svg class="right-image"
+          id="sw-js-blob-svg"
+          viewBox="0 0 100 100"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+        >
+          <defs>
+            <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+              <stop
+                id="stop1"
+                stop-color="rgba(255, 255, 255, 1)"
+                offset="0%"
+              ></stop>
+              <stop
+                id="stop2"
+                stop-color="rgba(0, 0, 0, 1)"
+                offset="100%"
+              ></stop>
+            </linearGradient>
+
+            
+            <clipPath id="clip-blob">
+              <path
+                d="M17.4,-24.8C24.2,-22.8,32.3,-20.6,36.1,-15.5C39.8,-10.5,39.2,-2.5,37.1,4.6C35,11.7,31.4,17.9,26.8,23C22.1,28.2,16.4,32.2,9.6,35.6C2.8,39,-5.1,41.6,-10.7,38.9C-16.3,36.1,-19.5,27.9,-23.3,21.4C-27.1,14.9,-31.3,10,-33.8,3.9C-36.2,-2.3,-36.7,-9.6,-34.6,-16.4C-32.5,-23.2,-27.6,-29.3,-21.4,-31.6C-15.2,-33.8,-7.6,-32.1,-1.1,-30.4C5.4,-28.6,10.7,-26.8,17.4,-24.8Z"
+                transform="translate(50 50)"
+              />
+            </clipPath>
+          </defs>
+
+          <path
+            fill="url(#sw-gradient)"
+            d="M17.4,-24.8C24.2,-22.8,32.3,-20.6,36.1,-15.5C39.8,-10.5,39.2,-2.5,37.1,4.6C35,11.7,31.4,17.9,26.8,23C22.1,28.2,16.4,32.2,9.6,35.6C2.8,39,-5.1,41.6,-10.7,38.9C-16.3,36.1,-19.5,27.9,-23.3,21.4C-27.1,14.9,-31.3,10,-33.8,3.9C-36.2,-2.3,-36.7,-9.6,-34.6,-16.4C-32.5,-23.2,-27.6,-29.3,-21.4,-31.6C-15.2,-33.8,-7.6,-32.1,-1.1,-30.4C5.4,-28.6,10.7,-26.8,17.4,-24.8Z"
+            width="100%"
+            height="100%"
+            transform="translate(50 50)"
+            stroke-width="0"
+            style="transition: 0.3s"
+            stroke="url(#sw-gradient)"
+          ></path>
+
+          
+          <image
+            href="assets/img/sak1.png"
+            x="10"
+            y="25"
+            width="80"
+            height="70"
+            clip-path="url(#clip-blob)"
+          />
+        </svg>
+      </div> -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Hello! I'm Sakshi Chakre</h2>
+        <p>I <span class="typed" data-typed-items="am a Developer, love coding ,am a Project Enthusiast">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Final-year CSE student skilled in C++, DSA, and full-stack development, with a passion for building efficient solutions. Experienced in leading academic projects and solving real-world problems through tech.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Web Developer.</h2>
+            <p class="fst-italic py-3">
+              Full-Stack Web Developer | HTML, CSS, JavaScript, Node.js, Express, EJS, MongoDB<br>
+              Experienced in developing dynamic, responsive web applications with seamless front-end and robust back-end integration. Focused on clean code, performance, and user-centered design.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>4 May 2004</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://node-backend-3-f264.onrender.com/api/user/userform</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 89998 87423</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Pune, Maharashtra, India</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BE</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>sakshichakre04.skn.comp@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p class="py-3">
+              Eager to leverage technical knowledge and analytical skills to contribute to impactful technology-driven solutions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <!-- <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    
+    <!-- /Stats Section -->
+
+    
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>An independent and self-motivated hardworking individual dedicated towards goal.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
+
+            <div class="resume-item pb-0">
+              <h4>SAKSHI CHAKRE</h4>
+              <p><em>B.E. in Computer Science,2026</em></p>
+              <ul>
+                <li>Pune, Maharashtra, India</li>
+                <li>+91 89998 87423</li>
+                <li>sakshichakre04.skn.comp@gmail.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Full Stack Developer Intern</h4>
+              <h5>20 Jan, 2025 - 20 Feb, 2025</h5>
+              <p><em>Accolade Electronics Pvt. Ltd. , Warje, Pune</em></p>
+              <ul>
+                <li>I had the opportunity to work on two impactful projects: AEPL Sampark_Diet Diagnostic Cloud - Focused on UI Testing &Documentation, unit testing, bug tracking, release note management, and optimizing deployment processes. 2 BSA AutomationTicketing Tool - Developed and implemented a User Management CRUD API using Node.js, Express.js, and MongoDB with securityintegrations like JWT authentication, data validation, and encryption. Additionally, I worked with Nodemailer for email notifications.
+                  This internship not only strengthened my technical expertise but also enhanced my problem-solving skills, time management, andadaptability. Balancing studies with a 9-hour work schedule was challenging at first, but it ultimately shaped me into a more disciplinedprofessional.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+            
+            
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>B.E. - Computer Science & Engineering</h4>
+              <h5>2022 - 2026</h5>
+              <p><em>Shrimati Kashibai Navale College Of Engineering, Pune</em></p>
+              <p>CGPA : 9.38 / 10</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>12th | MSBSHSE</h4>
+              <h5>2022</h5>
+              <p><em>A. D. Joshi Jr College, Solapur</em></p>
+              <p>Percentage : 89.33 / 100</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>10th | CBSE</h4>
+              <h5>2020</h5>
+              <p><em>Indian Model School, Solapur</em></p>
+              <p>Percentage : 95.20 / 100</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p><strong>Full-Stack Web Developer | Proficient in HTML, CSS, JavaScript, Node.js, Express, and EJS</strong></p>
+        <ul>
+          <li><strong>Programming Languages:</strong> Python, C, C++, Java, JavaScript</li>
+          <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Node.js, Express, EJS</li>
+          <li><strong>Technologies/Frameworks:</strong> GitHub, VS Code</li>
+          <li><strong>Coursework:</strong> Data Structures & Algorithms (DSA), Object-Oriented Programming (OOPs), SQL, PL/SQL, Computer Networks (CN), Operating Systems (OS), MongoDB</li>
+        </ul>
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">67%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">57%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>NodeJS</span> <i class="val">40%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>ExpressJS</span> <i class="val">37%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="37" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>EJS</span> <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>My Projects</h2>
+        <p>A comprehensive user management system designed to facilitate user registration, profile management, and data handling.Thisapplication was developed using Node.js and Express, with MongoDB as the database for storing user information. The system allowsusers to register, update, and delete their profiles seamlessly. The user interface is built with EJS templates, ensuring a dynamic andresponsive experience. Key features include form validation, pagination for user listings, and error handling to enhance userexperience. The application is structured using the MVC architecture, promoting maintainability and scalability. Additionally, the systemis optimized for performance and security, making it a robust solution for managing user data effectively.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/userform-screenshot.png" class="img-fluid" alt="User Management CRUD API">
+                <div class="portfolio-info">
+                  <h4>User Management CRUD API</h4>
+                  <p>A comprehensive user management system for registration, profile management, and data handling. Built with Node.js, Express, EJS, and MongoDB. Features authentication, validation, pagination, and email notifications. Optimized for performance and security using MVC architecture.</p>
+                  <a href="assets/img/portfolio/userform-screenshot.png" title="User Management CRUD API" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://node-backend-3-f264.onrender.com/api/user/userform" title="Live Project" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>I offer end-to-end web development services, specializing in full-stack solutions, secure API development, and comprehensive project documentation and testing. My focus is on delivering robust, maintainable, and scalable applications tailored to client and project needs.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-laptop"></i></div>
+            <div>
+              <h4 class="title">Full-Stack Web Development</h4>
+              <p class="description">Building dynamic, responsive web applications using Node.js, Express, EJS, and MongoDB. Focused on clean code and robust back-end integration.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-diagram-3"></i></div>
+            <div>
+              <h4 class="title">API Development & Integration</h4>
+              <p class="description">Designing and implementing secure RESTful APIs with authentication, data validation, and seamless integration for scalable solutions.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon flex-shrink-0"><i class="bi bi-file-earmark-text"></i></div>
+            <div>
+              <h4 class="title">Project Documentation & Testing</h4>
+              <p class="description">Writing clear documentation, conducting unit testing, and managing bug tracking to ensure robust and maintainable software delivery.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Here's what peers, mentors, and supervisors say about my work ethic, technical skills, and professionalism:</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Sakshi's attention to detail and commitment to clean, maintainable code made our project a success. She's a reliable team player and a quick learner.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Project Teammate</h3>
+                <h4>Peer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Her ability to break down complex problems and implement efficient solutions is impressive. Sakshi is always eager to help others and share her knowledge.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Academic Mentor</h3>
+                <h4>Professor</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Balancing a demanding internship with academic excellence, Sakshi consistently delivered high-quality work on time. Her professionalism and technical skills are top-notch.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Internship Supervisor</h3>
+                <h4>Manager</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>I'd love to hear from you! Whether you have a question, a project idea, or just want to connect, feel free to reach out. I'm always open to discussing new opportunities and collaborations. Let's work together to bring your vision to life. Drop me a message and l'll get back to you as soon as possible!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Pune, Maharashtra, India</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+91 89998 87423</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>sakshichakre04.skn.comp@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe src="https://www.google.com/maps?q=Pune,+Maharashtra,+India&output=embed" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Sakshi Chakre</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
