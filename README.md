@@ -75,11 +75,6 @@ The following environment variables are required:
 - `MONGODB_URI`: MongoDB connection string
 - `PORT`: Port number for the server (default: 3000)
 
-## 🚀 Deployment
-
-This application is currently deployed on:
-- Render: 
-
 ## 📝 License
 
 This project is licensed under the ISC License.
@@ -97,4 +92,4 @@ Sakshi Chakre
 - Phone: +91 89998 87423
 - Location: Pune, Maharashtra, India
 
-Project Link: [https://github.com/sakshichakre/portfolio](https://github.com/sakshichakre/portfolio)
+Project Link:
