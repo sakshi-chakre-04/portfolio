@@ -1,13 +1,14 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sakshi Chakre's Portfolio Website",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "server": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["portfolio", "web-development", "nodejs", "express"],
+  "author": "Sakshi Chakre",
   "license": "ISC",
   "type": "module",
   "dependencies": {
@@ -16,5 +17,8 @@
     "express": "^5.1.0",
     "mongoose": "^8.15.1",
     "nodemon": "^3.1.10"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }
