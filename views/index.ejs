@@ -589,7 +589,8 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <!-- Old form code -->
+            <!-- <form action="" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -621,8 +622,49 @@
                 </div>
 
               </div>
+            </form> -->
+
+            <!-- New form code with MongoDB integration -->
+            <form action="/" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <% if (typeof error !== 'undefined' && error) { %>
+                <div class="alert alert-danger" role="alert">
+                  <%= error %>
+                </div>
+              <% } %>
+              
+              <% if (typeof success !== 'undefined' && success) { %>
+                <div class="alert alert-success" role="alert">
+                  <%= success %>
+                </div>
+              <% } %>
+
+              <div class="row gy-4">
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required value="<%= typeof formData !== 'undefined' ? formData.name : '' %>">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required value="<%= typeof formData !== 'undefined' ? formData.email : '' %>">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required value="<%= typeof formData !== 'undefined' ? formData.subject : '' %>">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required><%= typeof formData !== 'undefined' ? formData.message : '' %></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
 

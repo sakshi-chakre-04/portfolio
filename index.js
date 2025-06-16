@@ -3,33 +3,42 @@ import routes from './routes/routes.js';
 import connectDB from './db/connectDB.js';
 import bodyParser from 'body-parser';
 import path from 'path';
-const app=express();
+import { fileURLToPath } from 'url';
+import dotenv from 'dotenv';
+dotenv.config();
 
-// Use Render's PORT or default to 8080
-const port=process.env.PORT || 8080;
+// const DATABASEURL = process.env.MONGODB_URI;
+
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
+
+// Use Render's PORT or default to 8080 yaha pe jo tu port acces kar rahi hai uska env file kaha hai ->i guess the render is not using port . it was previously used in my code.
+//see no file has port number except index.js ->matlab mai isse bass render pr use kar paungi agar port ka logic hata diya toh
+// agar port use kiya toh render pr jaha MONGO_URI dete as an evironment var phir waha aur ek envi vari mai port dena hoga chatgpt said keep port value blan=nk
+const port = process.env.PORT //"|| 8080 ;"
 
 // MongoDB Atlas connection string
 // const DATABASEURL=process.env.DATABASE_URL||'mongodb://127.0.0.1:27017/portfolio';  // Previous local MongoDB connection
-const DATABASEURL=process.env.MONGODB_URI || 'mongodb+srv://sakshichakre0421:rchAp3KidMpKB0VR@cluster1.m3si1wf.mongodb.net/portfolio';
+const DATABASEURL = process.env.MONGODB_URI || 'mongodb+srv://sakshichakre0421:rchAp3KidMpKB0VR@cluster1.m3si1wf.mongodb.net/portfolio?retryWrites=true&w=majority';
 
-//database configuration
-connectDB(DATABASEURL);
+// Middleware
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
-// parse application
-app.use(bodyParser.urlencoded({extended:false}))
-app.use(bodyParser.json()); // Add JSON parsing
+// Setup for static files
+app.use(express.static(path.join(__dirname, 'public')));
 
-//setup for static files
-app.use(express.static(path.join(process.cwd(),'public')));
-
-//ejs setup
+// EJS setup
 app.set('view engine', 'ejs');
-app.set('views','./views')
+app.set('views', path.join(__dirname, 'views'));
 
-//create routes
-app.use('/',routes);
+// Routes
+app.use('/', routes);
 
-// Add a health check route
+// Health check route
 app.get('/health', (req, res) => {
     res.status(200).send('OK');
 });
@@ -40,7 +49,18 @@ app.use((err, req, res, next) => {
     res.status(500).send('Something broke!');
 });
 
-//project setup
-app.listen(port, '0.0.0.0', () => {
-    console.log(`Server is running on port ${port}`);
-});
+// Database connection and server start
+const startServer = async () => {
+    try {
+        await connectDB(DATABASEURL);
+        app.listen(port, '0.0.0.0', () => {
+            console.log(`Server is running on port ${port}`);
+            // console.log("server running");
+        });
+    } catch (error) {
+        console.error('Failed to start server:', error);
+        process.exit(1);
+    }
+};
+
+startServer();

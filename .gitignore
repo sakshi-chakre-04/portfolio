@@ -12,3 +12,6 @@ yarn-error.log*
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# MongoDB Atlas Connection String
+MONGODB_URI=mongodb+srv://sakshichakre0421:rchAp3KidMpKB0VR@cluster1.m3si1wf.mongodb.net/portfolio?retryWrites=true&w=majority

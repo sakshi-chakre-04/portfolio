@@ -11,20 +11,69 @@ const homeController = async(req,res)=>{
 // User Contact Controller
 const ContactUserController = async(req,res)=>{
     try{
-        const data = await UserModel({
-            name:req.body.name,
-            email:req.body.email,
-            subject:req.body.subject,
-            message:req.body.message,
+        // Previous implementation
+        // const data = await UserModel({
+        //     name:req.body.name,
+        //     email:req.body.email,
+        //     subject:req.body.subject,
+        //     message:req.body.message,
+        //     // name:"Prem",
+        //     // email:"premkumar@gmail.com",
+        //     // subject:"Hello",
+        //     // message:"Hello, how are you?",
+        // })
+        // if(data){
+        //     await data.save()
+        //     console.log("User saved successfully")
+        // }
+        // res.render('index')
 
-        })
-        if(data){
-            await data.save()
-            console.log("User saved successfully")
+        // New implementation with validation and better error handling
+        const { name, email, subject, message } = req.body;
+
+        // Basic validation
+        if (!name || !email || !subject || !message) {
+            console.log("All fields are required");
+            return res.status(400).render('index', { 
+                error: "All fields are required",
+                formData: req.body // Preserve form data on error
+            });
         }
-        res.render('index')
+
+        // Email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            console.log("Invalid email format");
+            return res.status(400).render('index', { 
+                error: "Invalid email format",
+                formData: req.body
+            });
+        }
+
+        // Create new user document
+        const newUser = new UserModel({
+            name,
+            email,
+            subject,
+            message
+        });
+
+        // Save to database
+        await newUser.save();
+        console.log("User contact saved successfully");
+
+        // Render success message
+        res.render('index', { 
+            success: "Thank you for your message! We'll get back to you soon.",
+            formData: {} // Clear form data on success
+        });
+
     }catch(error){
-        console.log(error.message)
+        console.log("Error in ContactUserController:", error.message);
+        res.status(500).render('index', { 
+            error: "Something went wrong. Please try again later.",
+            formData: req.body
+        });
     }
 }
 
