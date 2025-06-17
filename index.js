@@ -15,9 +15,7 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-// Use Render's PORT or default to 8080 yaha pe jo tu port acces kar rahi hai uska env file kaha hai ->i guess the render is not using port . it was previously used in my code.
-//see no file has port number except index.js ->matlab mai isse bass render pr use kar paungi agar port ka logic hata diya toh
-// agar port use kiya toh render pr jaha MONGO_URI dete as an evironment var phir waha aur ek envi vari mai port dena hoga chatgpt said keep port value blan=nk
+// Use Render's PORT or default to 8080 
 const port = process.env.PORT //"|| 8080 ;"
 
 // MongoDB Atlas connection string
