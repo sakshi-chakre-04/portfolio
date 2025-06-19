@@ -53,8 +53,6 @@ MONGODB_URI=your_mongodb_connection_string
 npm run server
 ```
 
-The application will be available at `http://localhost:3000`
-
 ## 📁 Project Structure
 
 ```
@@ -89,7 +87,6 @@ Sakshi Chakre
 - LinkedIn: [sakshi-chakre](https://www.linkedin.com/in/sakshi-chakre)
 - Instagram: [@sakshi_chakre_04_](https://www.instagram.com/sakshi_chakre_04_/)
 - Email: sakshichakre04.skn.comp@gmail.com
-- Phone: +91 89998 87423
 - Location: Pune, Maharashtra, India
 
-Project Link:
+Project Link:https://portfolio-hkfe.onrender.com
