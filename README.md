@@ -53,8 +53,6 @@ MONGODB_URI=your_mongodb_connection_string
 npm run server
 ```
 
-The application will be available at `http://localhost:3000`
-
 ## 📁 Project Structure
 
 ```
@@ -73,12 +71,6 @@ portfolio/
 The following environment variables are required:
 
 - `MONGODB_URI`: MongoDB connection string
-- `PORT`: Port number for the server (default: 3000)
-
-## 🚀 Deployment
-
-This application is currently deployed on:
-- Render: https://node-backend-3-f264.onrender.com/api/user/userform
 
 ## 📝 License
 
@@ -94,7 +86,6 @@ Sakshi Chakre
 - LinkedIn: [sakshi-chakre](https://www.linkedin.com/in/sakshi-chakre)
 - Instagram: [@sakshi_chakre_04_](https://www.instagram.com/sakshi_chakre_04_/)
 - Email: sakshichakre04.skn.comp@gmail.com
-- Phone: +91 89998 87423
 - Location: Pune, Maharashtra, India
 
-Project Link: [https://github.com/sakshichakre/portfolio](https://github.com/sakshichakre/portfolio) 
+Project Link: https://portfolio-hkfe.onrender.com
