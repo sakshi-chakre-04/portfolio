@@ -73,14 +73,6 @@ The following environment variables are required:
 - `MONGODB_URI`: MongoDB connection string
 - `PORT`: Port number for the server (default: 3000)
 
-## 📝 License
-
-This project is licensed under the ISC License.
-
-## 👥 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/sakshichakre/portfolio/issues).
-
 ## 📧 Contact
 
 Sakshi Chakre
