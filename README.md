@@ -78,7 +78,7 @@ The following environment variables are required:
 Sakshi Chakre
 - LinkedIn: [sakshi-chakre](https://www.linkedin.com/in/sakshi-chakre)
 - Instagram: [@sakshi_chakre_04_](https://www.instagram.com/sakshi_chakre_04_/)
-- Email: sakshichakre04.skn.comp@gmail.com
+- Email: sakshichakre.skncoe.comp@gmail.com
 - Location: Pune, Maharashtra, India
 
 Project Link:https://portfolio-hkfe.onrender.com
